@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.card:hover .cardSVG
+{
+    /* stroke-opacity: 0; */
+    /* display: none; */
+    filter: drop-shadow(0 0 15px rgb(238, 236, 236));
+    stroke-opacity: 0;
+}
+
+.card:hover .cardcontent
+{
+    background-image: url(./img/features-wave.svg);
+    background-repeat: no-repeat;
+    background-position:right bottom 1rem  ;
+}
+
+.card2:hover .cardSVG2
+{
+    filter: drop-shadow(0 1px 24px rgba(0,0,0,0.4));
+    stroke: none;
+}
+
+.card2:hover .cardcontent2
+{
+    background-image: url(./img/features2-wave.svg);
+    background-repeat: no-repeat;
+    background-position:right bottom 1rem  ;
+}
+
+.card2:hover .cardicon2
+{
+    background-image: linear-gradient(to top right,rgb(159, 2, 159) ,royalblue 60% );
+    transition: all 0.3s ease;
+}
+
+
+.moveimg
+{
+    animation:moveup 30s linear infinite ;
+}
+
+@keyframes moveup {
+    0%
+    {
+        top: 0;
+    }
+
+    100%
+    {
+       top: -160%;
+        
+    }
+    
+}
